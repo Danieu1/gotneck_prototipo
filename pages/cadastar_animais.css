@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Noto+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#titulo{
+    font-family: 'Noto Sans', sans-serif;
+    color:rgb(68, 65, 65);
+    margin-left: 7%;
+}
+
+fieldset{
+    border: 0;
+}
+body{
+    background-color: #fbfaff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    color: rgb(128, 116, 139);
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+
+}
+
+.campo.label{
+    margin-bottom: 0.2em;
+    color: 916db2;
+    display: block;
+}
+
+fieldset.groupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="number"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(241, 231, 231, 0.2);
+    display: block;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+ background:  #cbcbfd;  
+}
+.botao{
+    font-size: 1.2em;
+    background: #cfbfff;
+    border: 0;
+    margin-bottom: 1em;
+    color: #fdf1f1;
+    padding: 0.2em 0.6em;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 2);
+    text-shadow: 1px 1px 1px rgba(59, 53, 53, 0.5);
+    position: absolute;
+    top:90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+  background: #d6c8ff;  
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+}
