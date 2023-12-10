@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Noto+Sans:wght@400;600&display=swap');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+img {
+    position: center;
+    width: 300px; 
+    height: auto;
+}
+
+form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(255, 254, 254);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(255, 254, 254);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #916db2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-cadastro{
+    width: 50%;
+    padding: 16px 0px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background:#1E1E1E;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #916db2;
+}
+
+input[type="number"] {
+    /* Firefox */
+    -moz-appearance: textfield;
+    
+    /* Chrome, Safari, Edge */
+    appearance: textfield;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #e2c8fa;
+    color: #000000 ;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgb(255, 254, 254);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #1a1c1d;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #695757;
+}
+
+.left > h1{
+    color: rgb(255, 255, 255);
+}
+.right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
