@@ -36,4 +36,19 @@ export default class Mensagem{
         });
         this.popup.show();
     }
+
+    static naoEncontrado(){
+        this.popup = new Popup({
+            id: "naoEncontrado",
+            title: "Não foi possível realizar login",
+            content: "Email ou senha incorretos!",
+            hideCallback : () => {
+                window.location.href = "login.html";
+            },
+            fontsize: "1px",
+            font: "Noto Sans', sans-serif",
+            css: `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`
+        });
+        this.popup.show();
+    }
 }

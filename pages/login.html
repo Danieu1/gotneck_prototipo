@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-<link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -18,15 +19,14 @@
                 <h1> LOGIN  </h1>
                 <div class="textfield">
                     <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
+                    <input type="text" name="usuario" id="email" placeholder="Usuário">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
                 </div>
-                <a href="../visualizar_rebanho.html">
-                    <button class="btn-login">Login</button>
-                </a>
+
+                    <button class="btn-login" id="btn-login">Login</button>
                 
                 <a href="cadastrar_usuario.html">
                     <button class="btn-cadastro">Cadastrar-se</button>
@@ -36,6 +36,6 @@
     </div>
     </div>
 
-    <script src="scripts/login.js"></script>
+    <script type="module" src="scripts/login.js"></script>
 </body>
 </html>

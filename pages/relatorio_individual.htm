@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Individual</title>
+    <link rel="stylesheet" href="styles/relatorio_individual.css">
+</head>
+
+    <body>
+        <div class="main">
+            <div class="left">
+                <h1>Relatório Individual</h1>
+            </div>
+            <div class="right">
+                <div class="card">
+                    
+                    <div class="textfield">
+                        <label for="id-colar"><strong>Id Colar:</strong> </label>
+                        <input type="text" name="id-colar" id="id-colar" required> 
+                    </div>
+
+                    <div class="textfield">
+                        <label for="especie"><strong>Espécie:</strong></label>
+                        <input type="text" name="especie" id="especie"> 
+
+                    </div>
+
+                    <div class="textfield">
+                        <label for="sexo"><strong>Sexo:</strong></label>
+                            <label>
+                                <input type="radio" name="sexo" value="macho"> <strong>Macho</strong>
+                            </label>
+                            <label>
+                                <input type="radio" name="sexo" value="femea"> <strong>Fêmea</strong> 
+                            </label>
+                    </div>
+
+                    <div class="textfield">
+                        <label for="peso"> <strong>Peso:</strong> </label>
+                        <input type="text" name="peso" id="peso"> 
+                    </div>
+
+                    <div>
+                        <br>
+                        <label for="atributos"><strong>Atributos:</strong> </label>
+                        <textarea row="6" style="width: 26em;" id="atributos" name="atributos"></textarea>
+                    </div>
+
+                        <button class="btn-login">Gerar Relatório</button>
+    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

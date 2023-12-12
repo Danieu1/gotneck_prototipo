@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Noto+Sans:wght@400;600&display=swap');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #916db2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left > h1{
+    color: rgb(255, 255, 255);
+}
+.right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dadoRebanho{
+    background-color: #916db2;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(255, 254, 254);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(255, 254, 254);
+}
+
+.informacao{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
