@@ -31,9 +31,9 @@ document.getElementById("cadastrar").addEventListener("click",()=>{
             listaAnimais.push(novoAnimal);
             console.log("cadastrou")
             localStorage.setItem("animais",JSON.stringify(listaAnimais));
-            Mensagem.cadastrado();
+            Mensagem.animalCadastrado();
         }else{
-        Mensagem.naoCadastrado();
+        Mensagem.animalNaoCadastrado();
         }
     }
 });
