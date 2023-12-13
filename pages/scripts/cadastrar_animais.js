@@ -1,5 +1,5 @@
-import Animal from "../../../gotneck_prototipo-main/pages/scripts/Models/Animal.js";
-import Mensagem from "../../../gotneck_prototipo-main/pages/scripts/Models/Mensagem.js";
+import Animal from "./Models/Animal.js";
+import Mensagem from "./Models/Mensagem.js";
 
 document.getElementById("cadastrar").addEventListener("click",()=>{
     
@@ -9,7 +9,7 @@ document.getElementById("cadastrar").addEventListener("click",()=>{
     let peso = document.getElementById("peso").value;
     let id_colar = document.getElementById("id-colar").value;
     let atributos = document.getElementById("atributos").value;
-    //let email_animal = JSON.parse(localStorage.getItem('usuarioLogado')).email
+    let email_animal = JSON.parse(localStorage.getItem('usuarioLogado')).email;
 
     if(especie.trim() === "" || peso.trim() === "" || id_colar.trim() === ""){
         Mensagem.preencherCampos();
