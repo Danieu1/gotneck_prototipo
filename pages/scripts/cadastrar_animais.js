@@ -4,6 +4,7 @@ import Mensagem from "./Models/Mensagem.js";
 document.getElementById("cadastrar").addEventListener("click",()=>{
     
     let animais = JSON.parse(localStorage.getItem('animais')) || []; //what? entendido
+    let usuario =  JSON.parse(localStorage.getItem('usuarioLogado'));
     let especie = document.getElementById("especie").value;
     let sexo = document.getElementById("sexo").value;
     let peso = document.getElementById("peso").value;
@@ -21,7 +22,7 @@ document.getElementById("cadastrar").addEventListener("click",()=>{
         for(let i=0; i < animais.length;i++){
             listaAnimais.push(animais[i]);
             console.log(animais[i]);
-            if(animais[i].id_colar === id_colar){
+            if(animais[i].id_colar === id_colar && animais[i].email_animal === usuario.email){
                 encontraId= true;
             }
         }
