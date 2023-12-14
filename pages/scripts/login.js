@@ -26,5 +26,5 @@ document.getElementById("btn-login").addEventListener("click",()=>{
 });
 
 document.getElementById("btn-cadastro").addEventListener("click",()=>{
-    window.location.href = "./pages/cadastrar_usuario.html";
+    window.location.href = "./cadastrar_usuario.html";
 });

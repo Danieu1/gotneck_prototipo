@@ -1,4 +1,3 @@
-import Animal from "./Models/Animal.js";
 import Usuario from "./Models/Usuario.js";
 import Mensagem from "./Models/Mensagem.js";
 
@@ -25,7 +24,6 @@ document.getElementById("btn-editar").addEventListener("click",()=>{
     let senha = document.getElementById("senha").value;
     let idade = document.getElementById("idade").value;
 
-
     if(email.trim() === "" || nome.trim() === "" || senha.trim() === "" || idade.trim() === ""){
         Mensagem.preencherCampos();
         return;
@@ -35,8 +33,7 @@ document.getElementById("btn-editar").addEventListener("click",()=>{
 
         for(let i=0; i < usuarios.length;i++){
             listaUsuarios.push(usuarios[i]);
-            console.log(usuarios[i]);
-            if(usuarios[i].email === email && usuarios[i].email !== usuario.email){
+            if(usuarios[i].email === email && email !== usuario.email){
                 encontraUsuario = true;
             }
         }
@@ -44,12 +41,20 @@ document.getElementById("btn-editar").addEventListener("click",()=>{
         if(!encontraUsuario){
             let usuarioAtualizado = new Usuario(nome, senha, email, idade);
             for(let i=0; i < usuarios.length;i++){
-                if(usuarios[i].email === email){
-                    encontraUsuario = true;
+                if(usuarios[i].email === usuario.email){
+                    for(let j=0; j < animais.length;j++){
+                        if(animais[j].email_animal === usuario.email){
+                            animais[j].email_animal = usuarioAtualizado.email;
+                        }
+                    }
+                    usuario = usuarioAtualizado;
+                    listaUsuarios[i] = usuarioAtualizado;
+                    console.log(usuarioAtualizado)
                 }
             }
-            listaUsuarios.push(novoUsuario);
             localStorage.setItem("usuarios",JSON.stringify(listaUsuarios));
+            localStorage.setItem("animais",JSON.stringify(animais));
+            localStorage.setItem("usuarioLogado",JSON.stringify(usuarioAtualizado));
             Mensagem.atualizado();
         }else{
         Mensagem.naoAtualizado();

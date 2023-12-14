@@ -59,3 +59,13 @@ main{
     align-items: left;
     justify-content: left;
 }
+
+.dadoRebanho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #1a1c1d;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
