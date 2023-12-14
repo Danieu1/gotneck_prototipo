@@ -24,5 +24,6 @@ window.onload = () => {
 
 let describeAnimal = (id) => {
     let idAnimal = id.currentTarget.id;
-    window.location.href = `../pages/relatorio_individual.html?id=${idAnimal}`;
+    window.location.href = `./pages/relatorio_individual.html?id=${idAnimal}`;
 };
+

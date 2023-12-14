@@ -26,3 +26,21 @@ main{
     padding: 0.5rem;
     box-sizing: border-box;
 }
+
+.navbar {
+    background-color: #916db2;
+    overflow: hidden;
+}
+
+.nav-link {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
