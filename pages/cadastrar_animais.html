@@ -1,53 +1,55 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Animal</title>
-    <link rel="stylesheet" href="styles/cadastar_animais.css" media="screen">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="styles/cadastrar_usuario.css">
 </head>
 <body>
-    <div>
-        <h1 id="titulo">Cadastro De Animal</h1>
-    </div>
-    <form>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="especie"><strong>Espécie:</strong></label>
-                <input type="text" name="especie" id="especie" required> 
-            </div>
 
-            <div class="campo">
-                <label for="sexo" id="sexo"><strong>Sexo:</strong></label>
-                    <label>
-                        <input type="radio" name="sexo" value="macho" checked required> <strong>Macho</strong>
-                    </label>
-                    <label>
-                        <input type="radio" name="sexo" value="femea" required> <strong>Fêmea</strong> 
-                    </label>
-               
-            </div>
+    <main>
+        <section class="left">
+            <img src="/gotneck_prototipo/logo.png" alt="Logo app">
+        </section>
 
-            <div class="campo">
-                <label for="peso"> <strong>Peso:</strong> </label>
-                <input type="text" name="peso" id="peso" required> 
-            </div>
+        
+        <section class="right">
+            <form>
+                <h1> CADASTRAR ANIMAIS</h1>
+                <div class="textfield">
+                    <label for="nome">Espécie</label>
+                    <input type="text" id="especie">
+                </div>
 
-            <div>
-                <label for="id-colar"><strong>Id Colar:</strong> </label>
-                <input type="text" name="id-colar" id="id-colar" required> 
-            </div>
+                <div class="textfield">
+                    <label for="sexo" id="sexo">Sexo:</label>
+                        <label>
+                            <input type="radio" name="sexo" value="macho" checked required> Macho
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="femea" required> Fêmea
+                        </label>
+                </div>
 
-            <div>
+                <div class="textfield">
+                    <label for="peso"> Peso: </label>
+                    <input type="text" name="peso" id="peso" required> 
+                </div>
+
+                <div class="textfield">
+                    <label for="id-colar"> Id Colar: </label>
+                    <input type="text" name="id-colar" id="id-colar" required> 
+                </div>
                 <br>
                 <label for="atributos"><strong>Atributos:</strong> </label>
                 <textarea row="6" style="width: 26em;" id="atributos" name="atributos"></textarea>
             </div>
-            <input type="button" value="Cadastrar" id="cadastrar" class="botao">
-            <!-- <button class="botao" id="cadastrar"> Cadastrar </button> -->
-
-        </fieldset>
-    </form>
+            
+                <input type="button" value="Cadastrar" id="cadastrar" class="btn-cadastro">
+                
+            </form>
+        </section>
+    </main>
 
     <script type="module" src="scripts/cadastrar_animais.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
