@@ -15,7 +15,7 @@ document.getElementById("btn-login").addEventListener("click",()=>{
             if(usuarios[i].email === email && usuarios[i].senha === senha){
                 encontraUsuario = true;
                 localStorage.setItem("usuarioLogado",JSON.stringify(usuarios[i]));
-                window.location.href = "../visualizar_rebanho.html";
+                window.location.href = "./visualizar_rebanho.html";
             }
         }
 
@@ -26,5 +26,5 @@ document.getElementById("btn-login").addEventListener("click",()=>{
 });
 
 document.getElementById("btn-cadastro").addEventListener("click",()=>{
-    window.location.href = "./cadastrar_usuario.html";
+    window.location.href = "./pages/cadastrar_usuario.html";
 });
