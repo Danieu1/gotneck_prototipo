@@ -8,7 +8,6 @@ document.getElementById("cadastrar").addEventListener("click",()=>{
     let especie = document.getElementById("especie").value;
     let tagSexo = document.getElementsByName("sexo");
     let sexo = tagSexo[0].checked ? "Macho" : "Fêmea";
-    console.log(sexo);
     let peso = document.getElementById("peso").value;
     let id_colar = document.getElementById("id-colar").value;
     let atributos = document.getElementById("atributos").value;
