@@ -1,11 +1,46 @@
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Usuario</title>
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="styles/cadastrar_usuario.css">
 </head>
 <body>
-    
-    <script src=""></script>
+
+    <main>
+        <section class="left">
+            <img src="/logo.png" alt="Logo app">
+        </section>
+
+        
+        <section class="right">
+            <form>
+                <h1> Editar usuário  </h1>
+                <div class="textfield">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Nome">
+                </div>
+                    
+                <div class="textfield">
+                    <label for="senha">Senha </label>
+                    <input type="text" id="senha" placeholder="Senha">
+                </div>
+                
+                <div class="textfield">  
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" placeholder="Idade">
+                </div>
+                
+                <div class="textfield">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="E-mail">
+                </div>
+                <input type="button" value="Salvar" id="btn-editar" class="btn-cadastro">
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="scripts/Editar_usuario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
 </body>
 </html>

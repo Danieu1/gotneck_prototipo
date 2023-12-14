@@ -95,8 +95,35 @@ export default class Mensagem{
             title: "Animal Cadastrado",
             content: "O bode foi cadastrado com sucesso!",
             hideCallback : () => {
-                window.location.href = "../visualizar_rebanho.html";
+                window.location.href = "./visualizar_rebanho.html";
             },
+            fontsize: "1px",
+            font: "Noto Sans', sans-serif",
+            css: `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`
+        });
+        this.popup.show();
+    }
+
+    static atualizado(){
+        this.popup = new Popup({
+            id: "atualizado",
+            title: "Usuário Atualizado",
+            content: "Seu usuário foi atualizado com sucesso!",
+            hideCallback : () => {
+                window.location.href = "./visualizar_rebanho.html"; 
+            },
+            fontsize: "1px",
+            font: "Noto Sans', sans-serif",
+            css: `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`
+        });
+        this.popup.show();
+    }
+
+    static naoAtualizado(){
+        this.popup = new Popup({
+            id: "naoAtualizado",
+            title: "Usuário Não Atualizado",
+            content: "Não foi possível atualizar seu usuário! E-mail já cadastrado!",
             fontsize: "1px",
             font: "Noto Sans', sans-serif",
             css: `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`

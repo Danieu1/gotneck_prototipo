@@ -17,7 +17,7 @@ window.onload = () => {
     for(let i=0; i < animais.length;i++){
         if(usuario.email === animais[i].email_animal && idAnimal === animais[i].id_colar){
           especie.value = animais[i].especie;
-          animais[i].sexo !== "Macho" ? macho.checked = true : femea.checked = true;
+          animais[i].sexo === "Macho" ? macho.checked = true : femea.checked = true;
           peso.value = animais[i].peso;
           id_colar.value = animais[i].id_colar;
           atributos.value = animais[i].atributos;
@@ -49,8 +49,14 @@ document.getElementById("btn-salvar").addEventListener("click",()=>{
         }
 
         if(!encontraId){
-            let novoAnimal = new Animal(especie, sexo, peso, id_colar, atributos, email_animal);
-            listaAnimais.push(novoAnimal);
+            for(let i=0; i < animais.length;i++){
+                if(usuario.email === animais[i].email_animal && idAnimal === animais[i].id_colar){
+                    let novoAnimal = new Animal(especie, sexo, peso, id_colar, atributos, email_animal);
+                    listaAnimais[i] = novoAnimal;
+                }
+              }
+            
+           
             localStorage.setItem("animais",JSON.stringify(listaAnimais));
             Mensagem.animalAtualizado();
         }else{
