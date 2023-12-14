@@ -44,3 +44,16 @@ main{
 .nav-link:hover {
     background-color: #555;
 }
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+    gap: 10px; 
+}
+
+.card {
+    width: 18%; /* Ajuste a largura conforme necessário */
+    margin: 10px; /* Ajuste a margem conforme necessário */
+    border: 1px solid #ccc; /* Adicione uma borda para melhor visualização */
+    box-sizing: border-box;
+}
