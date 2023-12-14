@@ -10,50 +10,51 @@ main{
     flex-direction: column;
 }
 
+h1{
+    margin-left: 1.5rem;
+}
+
 .animais{
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
+    gap: 10px; 
+    margin: 1rem;
+    padding: 0.5rem;
 }
 
 .animal{
     cursor: pointer;
-    width: 20%;
-    height: 15%;
-    box-shadow: 0px 10px 40px -12px #916db2;
+    box-shadow: 0px 10px 40px -10px #555;
     border-radius: 0.5rem;
     margin: 1rem;
     padding: 0.5rem;
-    box-sizing: border-box;
+    background-color: #e2c8fa;
+    transition: transform 0.2s ease-in-out;
+}
+
+.animal:hover{
+    transform: scale(110%);
 }
 
 .navbar {
     background-color: #916db2;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .nav-link {
     float: left;
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: right;
+    padding: 20px 20px;
     text-decoration: none;
 }
 
 .nav-link:hover {
     background-color: #555;
-}
-
-.animal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18%, 1fr));
-    gap: 10px; 
-    border: 1px solid #ccc; 
-    box-shadow: 0px 10px 40px -12px #916db2;
-    border-radius: 0.5rem;
-    margin: 1rem;
-    padding: 0.5rem;
 }
 
 .card {

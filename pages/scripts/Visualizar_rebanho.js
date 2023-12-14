@@ -4,7 +4,7 @@ window.onload = () => {
     let animaisSection = document.getElementById("rebanho");
 
     // Adiciona uma classe "animal-grid" ao contêiner
-    animaisSection.classList.add("animal-grid");
+    // animaisSection.classList.add("animal-grid");
     
     for (let i = 0; i < animais.length; i++) {
         if (usuario.email === animais[i].email_animal) {
@@ -34,3 +34,6 @@ let describeAnimal = (id) => {
     window.location.href = `./relatorio_individual.html?id=${idAnimal}`;
 };
 
+document.getElementById("sair").addEventListener("click", () => {
+    localStorage.setItem('usuarioLogado', JSON.stringify({}));
+});
