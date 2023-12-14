@@ -37,6 +37,31 @@ export default class Mensagem{
         this.popup.show();
     }
 
+    static animalAtualizado(){
+        this.popup = new Popup({
+            id: "animalAtualizado",
+            title: "Animal Atualizado",
+            content: "Animal atualizado com sucesso",
+            hideCallback : () => {
+                window.location.href = "visualizar_rebanho.html";
+            },
+            font: "Noto Sans', sans-serif",
+            css: `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`
+        });
+        this.popup.show();
+    }
+
+    static animalNaoAtualizado(){
+        this.popup = new Popup({
+            id: "animalNaoAtualizado",
+            title: "Animal Não Atualizado",
+            content: "Não foi possível cadastrar o animal, pois já existe um animal com esse colar!",   
+            font: "Noto Sans', sans-serif",
+            css: `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');`
+        });
+        this.popup.show();
+    }
+
 
     static preencherCampos(){
         this.popup = new Popup({
