@@ -7,7 +7,7 @@ document.getElementById("cadastrar").addEventListener("click",()=>{
     let usuario =  JSON.parse(localStorage.getItem('usuarioLogado'));
     let especie = document.getElementById("especie").value;
     let tagSexo = document.getElementsByName("sexo");
-    let sexo = tagSexo.checked ? "Fêmea" : "Macho";
+    let sexo = tagSexo[0].checked ? "Macho" : "Fêmea";
     console.log(sexo);
     let peso = document.getElementById("peso").value;
     let id_colar = document.getElementById("id-colar").value;
