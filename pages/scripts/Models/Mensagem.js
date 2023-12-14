@@ -5,6 +5,10 @@ export default class Mensagem{
                     font-size: 1.4rem;
                     font-wight: bolder;
                 }
+
+                *{
+                 font: "Noto Sans', sans-serif",
+                }
             `;
 
     static cadastrado(){
@@ -15,8 +19,6 @@ export default class Mensagem{
             hideCallback : () => {
                 window.location.href = "./login.html";
             },
-            fontsize: "1px",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -27,7 +29,6 @@ export default class Mensagem{
             id: "naoCadastrado",
             title: "Usuário não Cadastrado",
             content: "Não foi possível cadastrar usuário, pois já existe um usuário com esse email!",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -38,7 +39,6 @@ export default class Mensagem{
             id: "animalNaoCadastrado",
             title: "Animal não Cadastrado",
             content: "Não foi possível cadastrar o animal, pois já existe um animal com esse colar!",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -52,8 +52,7 @@ export default class Mensagem{
             hideCallback : () => {
                 window.location.href = "visualizar_rebanho.html";
             },
-            font: "Noto Sans', sans-serif",
-              css: cssSytle,
+            css: cssSytle,
         });
         this.popup.show();
     }
@@ -63,7 +62,6 @@ export default class Mensagem{
             id: "animalNaoAtualizado",
             title: "Animal Não Atualizado",
             content: "Não foi possível cadastrar o animal, pois já existe um animal com esse colar!",   
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -75,7 +73,6 @@ export default class Mensagem{
             id: "camposVazios",
             title: "Preencha todos os campos",
             content: "Existem campos não preenchidos",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -85,12 +82,10 @@ export default class Mensagem{
         this.popup = new Popup({
             id: "naoEncontrado",
             title: "Não foi possível realizar login",
-            content: "Email ou senha incorretos!",
+            content: "Email ou senha incorretos, ou usuário não cadastrado!",
             hideCallback : () => {
                 window.location.href = "./login.html";
             },
-            fontsize: "1px",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -104,8 +99,6 @@ export default class Mensagem{
             hideCallback : () => {
                 window.location.href = "./visualizar_rebanho.html";
             },
-            fontsize: "1px",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -119,8 +112,6 @@ export default class Mensagem{
             hideCallback : () => {
                 window.location.href = "./visualizar_rebanho.html"; 
             },
-            fontsize: "1px",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -131,8 +122,6 @@ export default class Mensagem{
             id: "naoAtualizado",
             title: "Usuário Não Atualizado",
             content: "Não foi possível atualizar seu usuário! E-mail já cadastrado!",
-            fontsize: "1px",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
@@ -146,8 +135,6 @@ export default class Mensagem{
             hideCallback : () => {
                 window.location.href = "./login.html";
             },
-            fontsize: "1px",
-            font: "Noto Sans', sans-serif",
             css: this.cssSytle,
         });
         this.popup.show();
