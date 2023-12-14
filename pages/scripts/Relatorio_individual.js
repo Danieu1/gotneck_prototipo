@@ -29,7 +29,6 @@ document.getElementById("excluir").addEventListener("click",()=>{
   for(let i=0; i < animais.length;i++){
     if(usuario.email === animais[i].email_animal && idAnimal === animais[i].id_colar){
         animais.splice(i,1);
-        console.log(i)
     }
   }
 

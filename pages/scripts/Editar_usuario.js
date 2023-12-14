@@ -63,24 +63,26 @@ document.getElementById("btn-editar").addEventListener("click",()=>{
 });
 
 document.getElementById("btn-excluir").addEventListener("click",()=>{
-    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-
+    let usuarios = JSON.parse(localStorage.getItem('usuarios'));
+    let usuario =  JSON.parse(localStorage.getItem('usuarioLogado'));
+    let animaisAtt = [];
     let listaUsuarios = [];
 
         for(let i=0; i < usuarios.length;i++){
             if(usuarios[i].email !== usuario.email){
                 listaUsuarios.push(usuarios[i]);
-            }else{
-
-                for(let j=0; j < animais.length;j++){
-                    if(animais[j].email_animal === usuario.email){
-                        animais.splice(j,1);
-                    }
-                }
             }
         }
+
+        for(let j=0; j < animais.length;j++){
+            if(animais[j].email_animal !== usuario.email){
+                animaisAtt.push(animais[j]);
+            }
+        }
+        console.log(animaisAtt)
+        
             localStorage.setItem("usuarios",JSON.stringify(listaUsuarios));
-            localStorage.setItem("animais",JSON.stringify(animais));
+            localStorage.setItem("animais",JSON.stringify(animaisAtt));
             localStorage.setItem("usuarioLogado",JSON.stringify({}));
             Mensagem.excluiUsuario();
 });
