@@ -21,7 +21,8 @@ window.onload = () => {
     }
 
     mediaPeso = mediaPeso/qtdAnimais;
-    media.innerHTML = mediaPeso.toFixed(2);
+    
+    media.innerHTML = isNaN(mediaPeso) ? 0:  mediaPeso.toFixed(2);
     numMachos.innerHTML = machos;
     numFemeas.innerHTML = femeas;
     qtdRebanho.innerHTML = qtdAnimais;
