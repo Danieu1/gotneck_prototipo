@@ -34,5 +34,5 @@ document.getElementById("excluir").addEventListener("click",()=>{
   }
 
   localStorage.setItem("animais",JSON.stringify(animais));
-  window.location.href = "../visualizar_rebanho.html";
+  window.location.href = "./visualizar_rebanho.html";
 });
