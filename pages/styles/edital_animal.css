@@ -61,7 +61,7 @@ body{
     margin: 5px 0px;
 }
 
-.textfield > p{
+.textfield > input{
     width: 100%;
     border: none;
     border-radius: 10px;

@@ -1,4 +1,3 @@
-
 window.onload = () => {
     let animais = JSON.parse(localStorage.getItem('animais')) || [];
     let usuario =  JSON.parse(localStorage.getItem('usuarioLogado'));
@@ -7,7 +6,7 @@ window.onload = () => {
     for(let i=0; i < animais.length;i++){
         if(usuario.email === animais[i].email_animal){
             let sectionAnimal = document.createElement("section");
-            sectionAnimal.setAttribute("id", i);
+            sectionAnimal.setAttribute("id", animais[i].id_colar);
             sectionAnimal.setAttribute("class", "animal");
             let idAnimal = document.createElement("p");
             idAnimal.innerHTML = `ID: ${animais[i].id_colar}`;    
@@ -25,5 +24,5 @@ window.onload = () => {
 
 let describeAnimal = (id) => {
     let idAnimal = id.currentTarget.id;
-    window.location.href = `../html/Visualizar_animal.html?id=${idAnimal}`;
+    window.location.href = `../pages/relatorio_individual.html?id=${idAnimal}`;
 };
