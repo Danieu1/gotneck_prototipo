@@ -29,10 +29,10 @@
                     <div class="textfield">
                         <label for="sexo"><strong>Sexo:</strong></label>
                             <label>
-                                <input type="radio" name="sexo" value="macho"> <strong>Macho</strong>
+                                <input type="radio" name="sexo" value="macho" id="macho"> <strong>Macho</strong>
                             </label>
                             <label>
-                                <input type="radio" name="sexo" value="femea"> <strong>Fêmea</strong> 
+                                <input type="radio" name="sexo" value="femea" id="femea"> <strong>Fêmea</strong> 
                             </label>
                     </div>
 
@@ -47,12 +47,13 @@
                         <textarea row="6" style="width: 26em;" id="atributos" name="atributos"></textarea>
                     </div>
 
-                        <button class="btn-login">Salvar</button>
+                        <button class="btn-salvar" id="btn-salvar">Salvar</button>
     
                 </div>
             </div>
         </div>
 
-        <script type="module" src="./scripts/Relatorio_individual.js"></script>
+        <script type="module" src="./scripts/Editar_animais.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
     </body>
 </html>
